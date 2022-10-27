@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32002.261
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fnaf99", "Fnaf99\Fnaf99.csproj", "{4C55314A-8520-4459-A674-C5364F0064E2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fnaf99", "Fnaf99.csproj", "{4C55314A-8520-4459-A674-C5364F0064E2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDKGenerator", "SDKGenerator\SDKGenerator.csproj", "{B288C074-165A-42E6-AA6B-95006658BBD5}"
 EndProject
