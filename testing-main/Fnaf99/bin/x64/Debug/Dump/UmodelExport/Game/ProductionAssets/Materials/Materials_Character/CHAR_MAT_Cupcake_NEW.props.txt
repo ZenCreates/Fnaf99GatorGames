@@ -1,0 +1,76 @@
+Parent = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Character/CHAR_MAT_Cupcake.CHAR_MAT_Cupcake'
+ScalarParameterValues[3] =
+{
+    ScalarParameterValues[0] =
+    {
+        ParameterInfo = { Name=Emissive Multiplyer }
+        ParameterValue = 1
+        ParameterName = None
+    }
+    ScalarParameterValues[1] =
+    {
+        ParameterInfo = { Name=Roughness Adjust }
+        ParameterValue = 0.25
+        ParameterName = None
+    }
+    ScalarParameterValues[2] =
+    {
+        ParameterInfo = { Name=RefractionDepthBias }
+        ParameterValue = 0
+        ParameterName = None
+    }
+}
+TextureParameterValues[4] =
+{
+    TextureParameterValues[0] =
+    {
+        ParameterInfo = { Name=AO_Rough_Metal }
+        ParameterValue = Texture2D'/Game/ProductionAssets/Textures/Textures_Character/NewCupcake_OcclusionRoughnessMetallic.NewCupcake_OcclusionRoughnessMetallic'
+        ParameterName = None
+    }
+    TextureParameterValues[1] =
+    {
+        ParameterInfo = { Name=Base_Color }
+        ParameterValue = Texture2D'/Game/ProductionAssets/Textures/Textures_Character/NewCupcake__Base_Color.NewCupcake__Base_Color'
+        ParameterName = None
+    }
+    TextureParameterValues[2] =
+    {
+        ParameterInfo = { Name=Emissive }
+        ParameterValue = Texture2D'/Game/ProductionAssets/Textures/Textures_Character/NewCupcake__Emissive.NewCupcake__Emissive'
+        ParameterName = None
+    }
+    TextureParameterValues[3] =
+    {
+        ParameterInfo = { Name=NormalBase_Color_1 }
+        ParameterValue = Texture2D'/Game/ProductionAssets/Textures/Textures_Character/NewCupcake_PaintingModelCupcake_teeth_and_candle_Normal.NewCupcake_PaintingModelCupcake_teeth_and_candle_Normal'
+        ParameterName = None
+    }
+}
+VectorParameterValues[0] = {}
+BasePropertyOverrides =
+{
+    bOverride_BlendMode = false
+    BlendMode = BLEND_Opaque (0)
+    bOverride_TwoSided = false
+    TwoSided = false
+    bOverride_OpacityMaskClipValue = false
+    OpacityMaskClipValue = 0.3333
+}
+StaticParameters =
+{
+    StaticSwitchParameters[0] = {}
+    StaticComponentMaskParameters[0] = {}
+    TerrainLayerWeightParameters[0] = {}
+    MaterialLayersParameters[0] = {}
+}
+RuntimeVirtualTextureParameterValues[0] = {}
+FontParameterValues[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

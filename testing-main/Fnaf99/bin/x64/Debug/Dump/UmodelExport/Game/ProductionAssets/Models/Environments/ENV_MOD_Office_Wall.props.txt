@@ -1,0 +1,50 @@
+Materials[3] =
+{
+    Materials[0] = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Environments/ENV_MAT_Office_03_Wall_Tiles.ENV_MAT_Office_03_Wall_Tiles'
+    Materials[1] = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Environments/ENV_MAT_Office_03_Wall_Tiles.ENV_MAT_Office_03_Wall_Tiles'
+    Materials[2] = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Environments/ENV_MAT_Office_03_Wall_Tiles.ENV_MAT_Office_03_Wall_Tiles'
+}
+SourceModels[0] = {}
+StaticMaterials[3] =
+{
+    StaticMaterials[0] =
+    {
+        MaterialInterface = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Environments/ENV_MAT_Office_03_Wall_Tiles.ENV_MAT_Office_03_Wall_Tiles'
+        MaterialSlotName = lambert3
+        UVChannelData =
+        {
+            bInitialized = true
+            bOverrideDensities = false
+            LocalUVDensities[4] = { 259.97, 260.063, 0, 0 }
+        }
+    }
+    StaticMaterials[1] =
+    {
+        MaterialInterface = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Environments/ENV_MAT_Office_03_Wall_Tiles.ENV_MAT_Office_03_Wall_Tiles'
+        MaterialSlotName = lambert2
+        UVChannelData =
+        {
+            bInitialized = true
+            bOverrideDensities = false
+            LocalUVDensities[4] = { 259.943, 259.943, 0, 0 }
+        }
+    }
+    StaticMaterials[2] =
+    {
+        MaterialInterface = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Environments/ENV_MAT_Office_03_Wall_Tiles.ENV_MAT_Office_03_Wall_Tiles'
+        MaterialSlotName = lambert1
+        UVChannelData =
+        {
+            bInitialized = true
+            bOverrideDensities = false
+            LocalUVDensities[4] = { 260.036, 259.974, 0, 0 }
+        }
+    }
+}
+Sockets[0] = {}
+ExtendedBounds =
+{
+    Origin = { X=0, Y=0, Z=130 }
+    BoxExtent = { X=7.62939e-06, Y=130, Z=130 }
+    SphereRadius = 183.848
+}

@@ -1,0 +1,3 @@
+Normal=ENV_TEX_Present_Normal
+Other[0]=ENV_TEX_Present_OcclusionRoughnessMetallic
+Other[1]=ENV_TEX_Present_BaseColor

@@ -1,0 +1,90 @@
+Parent = Material3'/Game/ProductionAssets/Materials/Materials_Environments/ENV_MAT_MASTER_Wide_Floor_Planks_.ENV_MAT_MASTER_Wide_Floor_Planks_'
+ScalarParameterValues[3] =
+{
+    ScalarParameterValues[0] =
+    {
+        ParameterInfo = { Name=Roughness Adjust }
+        ParameterValue = 0.748595
+        ParameterName = None
+    }
+    ScalarParameterValues[1] =
+    {
+        ParameterInfo = { Name=Tiling }
+        ParameterValue = 3
+        ParameterName = None
+    }
+    ScalarParameterValues[2] =
+    {
+        ParameterInfo = { Name=RefractionDepthBias }
+        ParameterValue = 0
+        ParameterName = None
+    }
+}
+TextureParameterValues[4] =
+{
+    TextureParameterValues[0] =
+    {
+        ParameterInfo = { Name=basecolor }
+        ParameterValue = Texture2D'/Game/ProductionAssets/Textures/Textures_Environment/Enviroment_SubReplacements/T_M_Plane_Ceramic_floor_MAT_BaseColor.T_M_Plane_Ceramic_floor_MAT_BaseColor'
+        ParameterName = None
+    }
+    TextureParameterValues[1] =
+    {
+        ParameterInfo = { Name=metallic }
+        ParameterValue = Texture2D'/Game/ProductionAssets/Textures/Textures_Environment/Enviroment_SubReplacements/T_M_Plane_Ceramic_floor_MAT_Metallic.T_M_Plane_Ceramic_floor_MAT_Metallic'
+        ParameterName = None
+    }
+    TextureParameterValues[2] =
+    {
+        ParameterInfo = { Name=normal }
+        ParameterValue = Texture2D'/Game/ProductionAssets/Textures/Textures_Environment/Enviroment_SubReplacements/T_M_Plane_Ceramic_floor_MAT_Normal.T_M_Plane_Ceramic_floor_MAT_Normal'
+        ParameterName = None
+    }
+    TextureParameterValues[3] =
+    {
+        ParameterInfo = { Name=roughness }
+        ParameterValue = Texture2D'/Game/ProductionAssets/Textures/Textures_Environment/Enviroment_SubReplacements/T_M_Plane_Ceramic_floor_MAT_Roughness.T_M_Plane_Ceramic_floor_MAT_Roughness'
+        ParameterName = None
+    }
+}
+VectorParameterValues[2] =
+{
+    VectorParameterValues[0] =
+    {
+        ParameterInfo = { Name=Normal Strength }
+        ParameterValue = { R=1, G=1, B=1, A=1 }
+        ParameterName = None
+    }
+    VectorParameterValues[1] =
+    {
+        ParameterInfo = { Name=Color }
+        ParameterValue = { R=0.371106, G=0.390625, B=0.231934, A=1 }
+        ParameterName = None
+    }
+}
+BasePropertyOverrides =
+{
+    bOverride_BlendMode = false
+    BlendMode = BLEND_Opaque (0)
+    bOverride_TwoSided = false
+    TwoSided = false
+    bOverride_OpacityMaskClipValue = false
+    OpacityMaskClipValue = 0.3333
+}
+StaticParameters =
+{
+    StaticSwitchParameters[0] = {}
+    StaticComponentMaskParameters[0] = {}
+    TerrainLayerWeightParameters[0] = {}
+    MaterialLayersParameters[0] = {}
+}
+RuntimeVirtualTextureParameterValues[0] = {}
+FontParameterValues[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

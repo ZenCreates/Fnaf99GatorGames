@@ -1,0 +1,7 @@
+Diffuse=ENV_TEX_Vent_Mangle_Puzzle_BaseColor
+Normal=ENV_TEX_Vent_Mangle_Puzzle_Normal
+Emissive=ENV_TEX_Vent_Mangle_Puzzle_Emissive
+Other[0]=ENV_TEX_Vent_Mangle_Puzzle_OcclusionRoughnessMetallic
+Other[1]=Char_Tex_Bonnie_BaseColor
+Other[2]=Char_Tex_Bonnie_Normal
+Other[3]=Char_Tex_Bonnie_OcclusionRoughnessMetallic

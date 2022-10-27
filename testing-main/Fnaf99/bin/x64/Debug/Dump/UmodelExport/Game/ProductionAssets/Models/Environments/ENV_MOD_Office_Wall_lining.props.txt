@@ -1,0 +1,26 @@
+Materials[1] =
+{
+    Materials[0] = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Environments/ENV_MAT_Office_03_Framing.ENV_MAT_Office_03_Framing'
+}
+SourceModels[0] = {}
+StaticMaterials[1] =
+{
+    StaticMaterials[0] =
+    {
+        MaterialInterface = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Environments/ENV_MAT_Office_03_Framing.ENV_MAT_Office_03_Framing'
+        MaterialSlotName = lambert1
+        UVChannelData =
+        {
+            bInitialized = true
+            bOverrideDensities = false
+            LocalUVDensities[4] = { 265.077, 265.077, 0, 0 }
+        }
+    }
+}
+Sockets[0] = {}
+ExtendedBounds =
+{
+    Origin = { X=-0.445531, Y=0.228745, Z=5.10293 }
+    BoxExtent = { X=0.445516, Y=130.313, Z=5.10293 }
+    SphereRadius = 130.413
+}

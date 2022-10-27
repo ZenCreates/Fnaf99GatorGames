@@ -1,0 +1,130 @@
+Materials[10] =
+{
+    Materials[0] = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Character/Char_Mat_Bonnie_Body.Char_Mat_Bonnie_Body'
+    Materials[1] = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Character/Char_Mat_Endo.Char_Mat_Endo'
+    Materials[6] = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Character/Char_Mat_Eye_Bonnie.Char_Mat_Eye_Bonnie'
+    Materials[7] = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Character/Char_Mat_Bonnie_Body.Char_Mat_Bonnie_Body'
+    Materials[8] = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Character/Char_Mat_Endo.Char_Mat_Endo'
+    Materials[9] = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Character/Char_Mat_Eye_Bonnie.Char_Mat_Eye_Bonnie'
+}
+SourceModels[0] = {}
+StaticMaterials[10] =
+{
+    StaticMaterials[0] =
+    {
+        MaterialInterface = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Character/Char_Mat_Bonnie_Body.Char_Mat_Bonnie_Body'
+        MaterialSlotName = Char_Mat_Bonnie_Body
+        UVChannelData =
+        {
+            bInitialized = true
+            bOverrideDensities = false
+            LocalUVDensities[4] = { 176.715, 1504.83, 0, 0 }
+        }
+    }
+    StaticMaterials[1] =
+    {
+        MaterialInterface = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Character/Char_Mat_Endo.Char_Mat_Endo'
+        MaterialSlotName = Char_Mat_Endo
+        UVChannelData =
+        {
+            bInitialized = true
+            bOverrideDensities = false
+            LocalUVDensities[4] = { 0, 0, 0, 0 }
+        }
+    }
+    StaticMaterials[2] =
+    {
+        MaterialInterface = None
+        MaterialSlotName = MaterialSlot
+        UVChannelData =
+        {
+            bInitialized = true
+            bOverrideDensities = false
+            LocalUVDensities[4] = { 0, 0, 0, 0 }
+        }
+    }
+    StaticMaterials[3] =
+    {
+        MaterialInterface = None
+        MaterialSlotName = MaterialSlot_1
+        UVChannelData =
+        {
+            bInitialized = true
+            bOverrideDensities = false
+            LocalUVDensities[4] = { 0, 0, 0, 0 }
+        }
+    }
+    StaticMaterials[4] =
+    {
+        MaterialInterface = None
+        MaterialSlotName = MaterialSlot_1_2
+        UVChannelData =
+        {
+            bInitialized = true
+            bOverrideDensities = false
+            LocalUVDensities[4] = { 0, 0, 0, 0 }
+        }
+    }
+    StaticMaterials[5] =
+    {
+        MaterialInterface = None
+        MaterialSlotName = MaterialSlot_1_2_3
+        UVChannelData =
+        {
+            bInitialized = true
+            bOverrideDensities = false
+            LocalUVDensities[4] = { 0, 0, 0, 0 }
+        }
+    }
+    StaticMaterials[6] =
+    {
+        MaterialInterface = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Character/Char_Mat_Eye_Bonnie.Char_Mat_Eye_Bonnie'
+        MaterialSlotName = Char_Mat_Eye_Bonnie
+        UVChannelData =
+        {
+            bInitialized = true
+            bOverrideDensities = false
+            LocalUVDensities[4] = { 0, 0, 0, 0 }
+        }
+    }
+    StaticMaterials[7] =
+    {
+        MaterialInterface = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Character/Char_Mat_Bonnie_Body.Char_Mat_Bonnie_Body'
+        MaterialSlotName = Char_Mat_Bonnie_Body
+        UVChannelData =
+        {
+            bInitialized = true
+            bOverrideDensities = false
+            LocalUVDensities[4] = { 352.741, 1455.55, 0, 0 }
+        }
+    }
+    StaticMaterials[8] =
+    {
+        MaterialInterface = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Character/Char_Mat_Endo.Char_Mat_Endo'
+        MaterialSlotName = Char_Mat_Endo
+        UVChannelData =
+        {
+            bInitialized = true
+            bOverrideDensities = false
+            LocalUVDensities[4] = { 0, 0, 0, 0 }
+        }
+    }
+    StaticMaterials[9] =
+    {
+        MaterialInterface = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Character/Char_Mat_Eye_Bonnie.Char_Mat_Eye_Bonnie'
+        MaterialSlotName = Char_Mat_Eye_Bonnie
+        UVChannelData =
+        {
+            bInitialized = true
+            bOverrideDensities = false
+            LocalUVDensities[4] = { 53.5191, 1492.46, 0, 0 }
+        }
+    }
+}
+Sockets[0] = {}
+ExtendedBounds =
+{
+    Origin = { X=3.96247, Y=15.6563, Z=142.641 }
+    BoxExtent = { X=65.9392, Y=44.9161, Z=142.87 }
+    SphereRadius = 151.557
+}

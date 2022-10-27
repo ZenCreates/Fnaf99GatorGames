@@ -1,0 +1,26 @@
+Materials[1] =
+{
+    Materials[0] = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Environments/MAT_Dangle_Wires.MAT_Dangle_Wires'
+}
+SourceModels[0] = {}
+StaticMaterials[1] =
+{
+    StaticMaterials[0] =
+    {
+        MaterialInterface = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Environments/MAT_Dangle_Wires.MAT_Dangle_Wires'
+        MaterialSlotName = MAT_Dangle_Wires
+        UVChannelData =
+        {
+            bInitialized = true
+            bOverrideDensities = false
+            LocalUVDensities[4] = { 134.31, 85.7258, 0, 0 }
+        }
+    }
+}
+Sockets[0] = {}
+ExtendedBounds =
+{
+    Origin = { X=0.00267696, Y=-0.0229816, Z=-39.1549 }
+    BoxExtent = { X=6.17602, Y=4.12832, Z=41.8284 }
+    SphereRadius = 42.2993
+}

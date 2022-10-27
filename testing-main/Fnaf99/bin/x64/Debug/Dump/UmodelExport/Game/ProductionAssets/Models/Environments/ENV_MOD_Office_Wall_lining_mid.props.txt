@@ -1,0 +1,26 @@
+Materials[1] =
+{
+    Materials[0] = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Environments/ENV_MAT_Office_03_Framing.ENV_MAT_Office_03_Framing'
+}
+SourceModels[0] = {}
+StaticMaterials[1] =
+{
+    StaticMaterials[0] =
+    {
+        MaterialInterface = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Environments/ENV_MAT_Office_03_Framing.ENV_MAT_Office_03_Framing'
+        MaterialSlotName = ENV_MAT_Office_03_Framing
+        UVChannelData =
+        {
+            bInitialized = true
+            bOverrideDensities = false
+            LocalUVDensities[4] = { 188.63, 188.63, 0, 0 }
+        }
+    }
+}
+Sockets[0] = {}
+ExtendedBounds =
+{
+    Origin = { X=-0.215511, Y=-0.0353394, Z=2.54671 }
+    BoxExtent = { X=0.215503, Y=130.194, Z=2.54671 }
+    SphereRadius = 130.219
+}

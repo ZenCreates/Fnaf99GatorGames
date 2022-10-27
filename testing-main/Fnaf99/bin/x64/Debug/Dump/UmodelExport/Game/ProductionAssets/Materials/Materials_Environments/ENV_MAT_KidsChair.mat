@@ -1,0 +1,4 @@
+Diffuse=ENV_TEX_KidsChair_BaseColor
+Normal=ENV_TEX_KidsChair_Normal
+Other[0]=ENV_TEX_KidsChair_OcclusionRoughnessMetallic
+Other[1]=TEC_GradientFromCenter

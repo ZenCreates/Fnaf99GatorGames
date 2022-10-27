@@ -1,0 +1,38 @@
+Materials[2] =
+{
+    Materials[0] = Material3'/Game/ProductionAssets/Materials/PizzaBox.PizzaBox'
+    Materials[1] = Material3'/Game/ProductionAssets/Materials/Pizza.Pizza'
+}
+SourceModels[0] = {}
+StaticMaterials[2] =
+{
+    StaticMaterials[0] =
+    {
+        MaterialInterface = Material3'/Game/ProductionAssets/Materials/PizzaBox.PizzaBox'
+        MaterialSlotName = 02___Default
+        UVChannelData =
+        {
+            bInitialized = true
+            bOverrideDensities = false
+            LocalUVDensities[4] = { 1.60356, 1.99759, 0, 0 }
+        }
+    }
+    StaticMaterials[1] =
+    {
+        MaterialInterface = Material3'/Game/ProductionAssets/Materials/Pizza.Pizza'
+        MaterialSlotName = 07___Default
+        UVChannelData =
+        {
+            bInitialized = true
+            bOverrideDensities = false
+            LocalUVDensities[4] = { 0.549011, 1.99138, 0, 0 }
+        }
+    }
+}
+Sockets[0] = {}
+ExtendedBounds =
+{
+    Origin = { X=-0.00215, Y=-0.04085, Z=0 }
+    BoxExtent = { X=0.32705, Y=0.06805, Z=0.3301 }
+    SphereRadius = 0.463493
+}

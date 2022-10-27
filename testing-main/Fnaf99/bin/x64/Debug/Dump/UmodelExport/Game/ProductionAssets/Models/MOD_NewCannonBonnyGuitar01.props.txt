@@ -1,0 +1,26 @@
+Materials[1] =
+{
+    Materials[0] = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Character/Char_Mat_Bonnie_New_Guitar.Char_Mat_Bonnie_New_Guitar'
+}
+SourceModels[0] = {}
+StaticMaterials[1] =
+{
+    StaticMaterials[0] =
+    {
+        MaterialInterface = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Character/Char_Mat_Bonnie_New_Guitar.Char_Mat_Bonnie_New_Guitar'
+        MaterialSlotName = blinn1
+        UVChannelData =
+        {
+            bInitialized = true
+            bOverrideDensities = false
+            LocalUVDensities[4] = { 143.848, 224.548, 0, 0 }
+        }
+    }
+}
+Sockets[0] = {}
+ExtendedBounds =
+{
+    Origin = { X=-0.116516, Y=0.0121355, Z=9.01881 }
+    BoxExtent = { X=101.869, Y=5.40984, Z=32.3761 }
+    SphereRadius = 107.027
+}

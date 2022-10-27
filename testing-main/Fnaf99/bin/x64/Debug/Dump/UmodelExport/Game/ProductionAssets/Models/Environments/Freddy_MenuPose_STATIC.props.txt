@@ -1,0 +1,122 @@
+Materials[9] =
+{
+    Materials[0] = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Character/Char_Mat_Endo.Char_Mat_Endo'
+    Materials[1] = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Character/Char_Mat_Eye_Freddy.Char_Mat_Eye_Freddy'
+    Materials[2] = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Character/Char_Mat_Freddy_Body.Char_Mat_Freddy_Body'
+    Materials[3] = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Character/Char_Mat_Microphone.Char_Mat_Microphone'
+    Materials[4] = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Character/Char_Mat_Freddy_Body.Char_Mat_Freddy_Body'
+    Materials[5] = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Character/Char_Mat_Endo.Char_Mat_Endo'
+    Materials[6] = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Character/Char_Mat_Eye_Freddy.Char_Mat_Eye_Freddy'
+    Materials[7] = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Character/Char_Mat_Microphone.Char_Mat_Microphone'
+    Materials[8] = Material3'/Game/ProductionAssets/Materials/Black.Black'
+}
+SourceModels[0] = {}
+StaticMaterials[9] =
+{
+    StaticMaterials[0] =
+    {
+        MaterialInterface = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Character/Char_Mat_Endo.Char_Mat_Endo'
+        MaterialSlotName = Char_Mat_Freddy_Body
+        UVChannelData =
+        {
+            bInitialized = true
+            bOverrideDensities = false
+            LocalUVDensities[4] = { 176.724, 1467.34, 0, 0 }
+        }
+    }
+    StaticMaterials[1] =
+    {
+        MaterialInterface = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Character/Char_Mat_Eye_Freddy.Char_Mat_Eye_Freddy'
+        MaterialSlotName = Char_Mat_Endo
+        UVChannelData =
+        {
+            bInitialized = true
+            bOverrideDensities = false
+            LocalUVDensities[4] = { 73.7126, 1463.05, 0, 0 }
+        }
+    }
+    StaticMaterials[2] =
+    {
+        MaterialInterface = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Character/Char_Mat_Freddy_Body.Char_Mat_Freddy_Body'
+        MaterialSlotName = Char_Mat_Eye_Freddy
+        UVChannelData =
+        {
+            bInitialized = true
+            bOverrideDensities = false
+            LocalUVDensities[4] = { 352.14, 1417.2, 0, 0 }
+        }
+    }
+    StaticMaterials[3] =
+    {
+        MaterialInterface = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Character/Char_Mat_Microphone.Char_Mat_Microphone'
+        MaterialSlotName = Char_Mat_Microphone
+        UVChannelData =
+        {
+            bInitialized = true
+            bOverrideDensities = false
+            LocalUVDensities[4] = { 51.6377, 1433.36, 0, 0 }
+        }
+    }
+    StaticMaterials[4] =
+    {
+        MaterialInterface = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Character/Char_Mat_Freddy_Body.Char_Mat_Freddy_Body'
+        MaterialSlotName = Char_Mat_Freddy_Body
+        UVChannelData =
+        {
+            bInitialized = true
+            bOverrideDensities = false
+            LocalUVDensities[4] = { 0, 0, 0, 0 }
+        }
+    }
+    StaticMaterials[5] =
+    {
+        MaterialInterface = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Character/Char_Mat_Endo.Char_Mat_Endo'
+        MaterialSlotName = Char_Mat_Endo
+        UVChannelData =
+        {
+            bInitialized = true
+            bOverrideDensities = false
+            LocalUVDensities[4] = { 0, 0, 0, 0 }
+        }
+    }
+    StaticMaterials[6] =
+    {
+        MaterialInterface = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Character/Char_Mat_Eye_Freddy.Char_Mat_Eye_Freddy'
+        MaterialSlotName = Char_Mat_Eye_Freddy
+        UVChannelData =
+        {
+            bInitialized = true
+            bOverrideDensities = false
+            LocalUVDensities[4] = { 0, 0, 0, 0 }
+        }
+    }
+    StaticMaterials[7] =
+    {
+        MaterialInterface = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Character/Char_Mat_Microphone.Char_Mat_Microphone'
+        MaterialSlotName = Char_Mat_Microphone
+        UVChannelData =
+        {
+            bInitialized = true
+            bOverrideDensities = false
+            LocalUVDensities[4] = { 0, 0, 0, 0 }
+        }
+    }
+    StaticMaterials[8] =
+    {
+        MaterialInterface = Material3'/Game/ProductionAssets/Materials/Black.Black'
+        MaterialSlotName = lambert2
+        UVChannelData =
+        {
+            bInitialized = true
+            bOverrideDensities = false
+            LocalUVDensities[4] = { 334.438, 1421.2, 0, 0 }
+        }
+    }
+}
+Sockets[0] = {}
+ExtendedBounds =
+{
+    Origin = { X=1.911, Y=13.7977, Z=124.298 }
+    BoxExtent = { X=60.0023, Y=43.4536, Z=124.526 }
+    SphereRadius = 134.035
+}

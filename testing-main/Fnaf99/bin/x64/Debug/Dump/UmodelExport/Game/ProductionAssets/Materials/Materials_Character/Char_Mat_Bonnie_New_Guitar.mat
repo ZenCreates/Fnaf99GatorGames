@@ -1,0 +1,4 @@
+Diffuse=CHAR_TEX_New_Guitar_blinn1_BaseColor
+Normal=CHAR_TEX_New_Guitar_blinn1_Normal
+Other[0]=CHAR_TEX_New_Guitar_blinn1_OcclusionRoughnessMetallic
+Other[1]=TEC_GradientFromCenter

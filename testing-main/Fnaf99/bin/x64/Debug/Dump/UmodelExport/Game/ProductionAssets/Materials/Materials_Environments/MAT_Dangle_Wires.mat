@@ -1,0 +1,4 @@
+Diffuse=ENV_TEX_Dangle_Wires_BaseColor
+Normal=ENV_TEX_Dangle_Wires_Normal
+Other[0]=ENV_TEX_Dangle_Wires_OcclusionRoughnessMetallic
+Other[1]=TEC_GradientFromCenter

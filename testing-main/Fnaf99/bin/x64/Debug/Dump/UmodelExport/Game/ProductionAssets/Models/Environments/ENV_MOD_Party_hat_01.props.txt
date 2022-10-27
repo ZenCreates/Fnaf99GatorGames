@@ -1,0 +1,38 @@
+Materials[2] =
+{
+    Materials[0] = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Environments/ENV_MAT_Party_Hat_01.ENV_MAT_Party_Hat_01'
+    Materials[1] = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Environments/ENV_MAT_Kids_Table.ENV_MAT_Kids_Table'
+}
+SourceModels[0] = {}
+StaticMaterials[2] =
+{
+    StaticMaterials[0] =
+    {
+        MaterialInterface = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Environments/ENV_MAT_Party_Hat_01.ENV_MAT_Party_Hat_01'
+        MaterialSlotName = lambert3
+        UVChannelData =
+        {
+            bInitialized = true
+            bOverrideDensities = false
+            LocalUVDensities[4] = { 58.5782, 55.1871, 0, 0 }
+        }
+    }
+    StaticMaterials[1] =
+    {
+        MaterialInterface = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Environments/ENV_MAT_Kids_Table.ENV_MAT_Kids_Table'
+        MaterialSlotName = lambert1
+        UVChannelData =
+        {
+            bInitialized = true
+            bOverrideDensities = false
+            LocalUVDensities[4] = { 515.946, 71.1416, 0, 0 }
+        }
+    }
+}
+Sockets[0] = {}
+ExtendedBounds =
+{
+    Origin = { X=-5.79934, Y=-3.01467, Z=18.4626 }
+    BoxExtent = { X=17.7319, Y=14.9472, Z=18.7288 }
+    SphereRadius = 26.1256
+}

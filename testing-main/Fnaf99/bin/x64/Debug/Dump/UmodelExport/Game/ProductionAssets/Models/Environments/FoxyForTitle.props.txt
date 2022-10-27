@@ -1,0 +1,50 @@
+Materials[3] =
+{
+    Materials[0] = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Character/Char_Mat_Endo.Char_Mat_Endo'
+    Materials[1] = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Character/Char_Mat_Eye_Foxy.Char_Mat_Eye_Foxy'
+    Materials[2] = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Character/Char_Mat_Foxy_Body.Char_Mat_Foxy_Body'
+}
+SourceModels[0] = {}
+StaticMaterials[3] =
+{
+    StaticMaterials[0] =
+    {
+        MaterialInterface = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Character/Char_Mat_Endo.Char_Mat_Endo'
+        MaterialSlotName = Char_Mat_Endo
+        UVChannelData =
+        {
+            bInitialized = true
+            bOverrideDensities = false
+            LocalUVDensities[4] = { 181.545, 2092.68, 0, 0 }
+        }
+    }
+    StaticMaterials[1] =
+    {
+        MaterialInterface = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Character/Char_Mat_Eye_Foxy.Char_Mat_Eye_Foxy'
+        MaterialSlotName = Char_Mat_Eye_Foxy
+        UVChannelData =
+        {
+            bInitialized = true
+            bOverrideDensities = false
+            LocalUVDensities[4] = { 75.5711, 2105.7, 0, 0 }
+        }
+    }
+    StaticMaterials[2] =
+    {
+        MaterialInterface = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Character/Char_Mat_Foxy_Body.Char_Mat_Foxy_Body'
+        MaterialSlotName = Char_Mat_Foxy_Body
+        UVChannelData =
+        {
+            bInitialized = true
+            bOverrideDensities = false
+            LocalUVDensities[4] = { 265.181, 2012.89, 0, 0 }
+        }
+    }
+}
+Sockets[0] = {}
+ExtendedBounds =
+{
+    Origin = { X=4.97701, Y=22.0044, Z=116.937 }
+    BoxExtent = { X=78.2169, Y=56.0429, Z=117.723 }
+    SphereRadius = 131.468
+}

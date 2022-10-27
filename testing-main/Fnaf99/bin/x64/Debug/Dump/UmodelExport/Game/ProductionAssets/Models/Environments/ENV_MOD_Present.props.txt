@@ -1,0 +1,38 @@
+Materials[2] =
+{
+    Materials[0] = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Environments/ENV_Mat_Gift_Wrapping_Red.ENV_Mat_Gift_Wrapping_Red'
+    Materials[1] = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Environments/ENV_Mat_Gift_Wrapping_White.ENV_Mat_Gift_Wrapping_White'
+}
+SourceModels[0] = {}
+StaticMaterials[2] =
+{
+    StaticMaterials[0] =
+    {
+        MaterialInterface = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Environments/ENV_Mat_Gift_Wrapping_Red.ENV_Mat_Gift_Wrapping_Red'
+        MaterialSlotName = lambert3
+        UVChannelData =
+        {
+            bInitialized = true
+            bOverrideDensities = false
+            LocalUVDensities[4] = { 98.9419, 121.174, 0, 0 }
+        }
+    }
+    StaticMaterials[1] =
+    {
+        MaterialInterface = MaterialInstanceConstant'/Game/ProductionAssets/Materials/Materials_Environments/ENV_Mat_Gift_Wrapping_White.ENV_Mat_Gift_Wrapping_White'
+        MaterialSlotName = lambert1
+        UVChannelData =
+        {
+            bInitialized = true
+            bOverrideDensities = false
+            LocalUVDensities[4] = { 84.3317, 120.957, 0, 0 }
+        }
+    }
+}
+Sockets[0] = {}
+ExtendedBounds =
+{
+    Origin = { X=-7.62939e-06, Y=7.62939e-06, Z=16.4169 }
+    BoxExtent = { X=15.1243, Y=15.1243, Z=16.5169 }
+    SphereRadius = 26.6005
+}

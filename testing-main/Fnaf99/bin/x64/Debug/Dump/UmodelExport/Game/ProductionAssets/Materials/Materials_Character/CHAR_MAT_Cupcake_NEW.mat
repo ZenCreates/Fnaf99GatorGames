@@ -1,0 +1,11 @@
+Diffuse=NewCupcake__Base_Color
+Normal=NewCupcake_PaintingModelCupcake_teeth_and_candle_Normal
+Emissive=NewCupcake__Emissive
+Other[0]=NewCupcake_OcclusionRoughnessMetallic
+Other[1]=CHAR_TEX_Cupcake_OcclusionRoughnessMetallic
+Other[2]=CHAR_TEX_Cupcake_BaseColor
+Other[3]=CHAR_TEX_Cupcake_Emissive
+Other[4]=CHAR_TEX_Cupcake_Normal
+Other[5]=Char_Tex_Bonnie_BaseColor
+Other[6]=Char_Tex_Bonnie_Normal
+Other[7]=Char_Tex_Bonnie_OcclusionRoughnessMetallic
