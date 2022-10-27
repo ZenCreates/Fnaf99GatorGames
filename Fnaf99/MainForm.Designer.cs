@@ -47,71 +47,74 @@ namespace Fnaf99
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Black;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label1.Font = new System.Drawing.Font("Courier New", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.ForeColor = System.Drawing.Color.DarkRed;
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(215, 39);
             this.label1.TabIndex = 0;
-            this.label1.Text = "udump 1.0";
+            this.label1.Text = "udump 1.1";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Levels
             // 
-            this.Levels.BackColor = System.Drawing.Color.Black;
+            this.Levels.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Levels.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Levels.ForeColor = System.Drawing.Color.DarkRed;
+            this.Levels.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Levels.ForeColor = System.Drawing.Color.White;
             this.Levels.FormattingEnabled = true;
+            this.Levels.ItemHeight = 17;
             this.Levels.Location = new System.Drawing.Point(17, 143);
             this.Levels.Name = "Levels";
-            this.Levels.Size = new System.Drawing.Size(175, 403);
+            this.Levels.Size = new System.Drawing.Size(175, 391);
             this.Levels.TabIndex = 1;
             this.Levels.SelectedIndexChanged += new System.EventHandler(this.Levels_SelectedIndexChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Black;
-            this.label2.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.ForeColor = System.Drawing.Color.DarkRed;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label2.Font = new System.Drawing.Font("Nirmala UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(200, 111);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(166, 23);
+            this.label2.Size = new System.Drawing.Size(130, 28);
             this.label2.TabIndex = 2;
             this.label2.Text = "Maps loaded:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // reconnectToProc
             // 
+            this.reconnectToProc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.reconnectToProc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.reconnectToProc.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.reconnectToProc.ForeColor = System.Drawing.Color.DarkRed;
+            this.reconnectToProc.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reconnectToProc.ForeColor = System.Drawing.Color.White;
             this.reconnectToProc.Location = new System.Drawing.Point(577, 12);
             this.reconnectToProc.Name = "reconnectToProc";
             this.reconnectToProc.Size = new System.Drawing.Size(195, 34);
             this.reconnectToProc.TabIndex = 3;
             this.reconnectToProc.Text = "Connect to game";
-            this.reconnectToProc.UseVisualStyleBackColor = true;
+            this.reconnectToProc.UseVisualStyleBackColor = false;
             this.reconnectToProc.Click += new System.EventHandler(this.reconnectToProc_Click);
             // 
             // isConnected
             // 
             this.isConnected.AutoSize = true;
-            this.isConnected.BackColor = System.Drawing.Color.Black;
-            this.isConnected.Font = new System.Drawing.Font("Courier New", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.isConnected.ForeColor = System.Drawing.Color.DarkRed;
-            this.isConnected.Location = new System.Drawing.Point(375, 14);
+            this.isConnected.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.isConnected.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.isConnected.ForeColor = System.Drawing.Color.White;
+            this.isConnected.Location = new System.Drawing.Point(435, 17);
             this.isConnected.Name = "isConnected";
-            this.isConnected.Size = new System.Drawing.Size(194, 27);
+            this.isConnected.Size = new System.Drawing.Size(136, 25);
             this.isConnected.TabIndex = 4;
             this.isConnected.Text = "Not connected";
             // 
             // dumpButton
             // 
             this.dumpButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dumpButton.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.dumpButton.ForeColor = System.Drawing.Color.DarkRed;
+            this.dumpButton.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dumpButton.ForeColor = System.Drawing.Color.White;
             this.dumpButton.Location = new System.Drawing.Point(577, 512);
             this.dumpButton.Name = "dumpButton";
             this.dumpButton.Size = new System.Drawing.Size(195, 34);
@@ -122,21 +125,23 @@ namespace Fnaf99
             // 
             // mapsToDump
             // 
-            this.mapsToDump.BackColor = System.Drawing.Color.Black;
+            this.mapsToDump.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.mapsToDump.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.mapsToDump.ForeColor = System.Drawing.Color.DarkRed;
+            this.mapsToDump.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mapsToDump.ForeColor = System.Drawing.Color.White;
             this.mapsToDump.FormattingEnabled = true;
+            this.mapsToDump.ItemHeight = 17;
             this.mapsToDump.Location = new System.Drawing.Point(198, 142);
             this.mapsToDump.Name = "mapsToDump";
-            this.mapsToDump.Size = new System.Drawing.Size(175, 364);
+            this.mapsToDump.Size = new System.Drawing.Size(175, 357);
             this.mapsToDump.TabIndex = 6;
             // 
             // clearBtn
             // 
             this.clearBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.clearBtn.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.clearBtn.ForeColor = System.Drawing.Color.DarkRed;
-            this.clearBtn.Location = new System.Drawing.Point(198, 512);
+            this.clearBtn.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clearBtn.ForeColor = System.Drawing.Color.White;
+            this.clearBtn.Location = new System.Drawing.Point(215, 512);
             this.clearBtn.Name = "clearBtn";
             this.clearBtn.Size = new System.Drawing.Size(175, 34);
             this.clearBtn.TabIndex = 7;
@@ -147,12 +152,12 @@ namespace Fnaf99
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Black;
-            this.label3.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.ForeColor = System.Drawing.Color.DarkRed;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label3.Font = new System.Drawing.Font("Nirmala UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(15, 112);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(179, 23);
+            this.label3.Size = new System.Drawing.Size(138, 25);
             this.label3.TabIndex = 8;
             this.label3.Text = "Maps to dump:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -160,12 +165,12 @@ namespace Fnaf99
             // actortodumplabel
             // 
             this.actortodumplabel.AutoSize = true;
-            this.actortodumplabel.BackColor = System.Drawing.Color.Black;
-            this.actortodumplabel.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.actortodumplabel.ForeColor = System.Drawing.Color.DarkRed;
-            this.actortodumplabel.Location = new System.Drawing.Point(572, 483);
+            this.actortodumplabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.actortodumplabel.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actortodumplabel.ForeColor = System.Drawing.Color.White;
+            this.actortodumplabel.Location = new System.Drawing.Point(572, 484);
             this.actortodumplabel.Name = "actortodumplabel";
-            this.actortodumplabel.Size = new System.Drawing.Size(178, 18);
+            this.actortodumplabel.Size = new System.Drawing.Size(180, 25);
             this.actortodumplabel.TabIndex = 9;
             this.actortodumplabel.Text = "Meshes to dump: 0";
             this.actortodumplabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -173,9 +178,9 @@ namespace Fnaf99
             // settingBtn
             // 
             this.settingBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.settingBtn.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.settingBtn.ForeColor = System.Drawing.Color.DarkRed;
-            this.settingBtn.Location = new System.Drawing.Point(379, 512);
+            this.settingBtn.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.settingBtn.ForeColor = System.Drawing.Color.White;
+            this.settingBtn.Location = new System.Drawing.Point(396, 512);
             this.settingBtn.Name = "settingBtn";
             this.settingBtn.Size = new System.Drawing.Size(175, 34);
             this.settingBtn.TabIndex = 10;
@@ -186,34 +191,35 @@ namespace Fnaf99
             // umodelInsts
             // 
             this.umodelInsts.AutoSize = true;
-            this.umodelInsts.BackColor = System.Drawing.Color.Black;
-            this.umodelInsts.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.umodelInsts.ForeColor = System.Drawing.Color.DarkRed;
+            this.umodelInsts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.umodelInsts.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.umodelInsts.ForeColor = System.Drawing.Color.White;
             this.umodelInsts.Location = new System.Drawing.Point(572, 456);
             this.umodelInsts.Name = "umodelInsts";
-            this.umodelInsts.Size = new System.Drawing.Size(198, 18);
+            this.umodelInsts.Size = new System.Drawing.Size(191, 25);
             this.umodelInsts.TabIndex = 11;
             this.umodelInsts.Text = "UModel Instances: 0";
             this.umodelInsts.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // aboutBtn
             // 
+            this.aboutBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.aboutBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.aboutBtn.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.aboutBtn.ForeColor = System.Drawing.Color.DarkRed;
+            this.aboutBtn.ForeColor = System.Drawing.Color.White;
             this.aboutBtn.Location = new System.Drawing.Point(12, 51);
             this.aboutBtn.Name = "aboutBtn";
             this.aboutBtn.Size = new System.Drawing.Size(78, 32);
             this.aboutBtn.TabIndex = 12;
             this.aboutBtn.Text = "About";
-            this.aboutBtn.UseVisualStyleBackColor = true;
+            this.aboutBtn.UseVisualStyleBackColor = false;
             this.aboutBtn.Click += new System.EventHandler(this.aboutBtn_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(784, 561);
             this.Controls.Add(this.aboutBtn);
             this.Controls.Add(this.umodelInsts);
@@ -228,6 +234,7 @@ namespace Fnaf99
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Levels);
             this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "MainForm";
             this.Text = " ";
             this.Load += new System.EventHandler(this.MainForm_Load);
