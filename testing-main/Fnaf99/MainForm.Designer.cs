@@ -53,7 +53,7 @@ namespace Fnaf99
             this.Levels.FormattingEnabled = true;
             this.Levels.Location = new System.Drawing.Point(17, 143);
             this.Levels.Name = "Levels";
-            this.Levels.Size = new System.Drawing.Size(175, 494);
+            this.Levels.Size = new System.Drawing.Size(268, 494);
             this.Levels.TabIndex = 1;
             this.Levels.SelectedIndexChanged += new System.EventHandler(this.Levels_SelectedIndexChanged);
             // 
@@ -121,7 +121,7 @@ namespace Fnaf99
             this.mapsToDump.FormattingEnabled = true;
             this.mapsToDump.Location = new System.Drawing.Point(291, 143);
             this.mapsToDump.Name = "mapsToDump";
-            this.mapsToDump.Size = new System.Drawing.Size(175, 481);
+            this.mapsToDump.Size = new System.Drawing.Size(264, 481);
             this.mapsToDump.TabIndex = 6;
             // 
             // clearBtn

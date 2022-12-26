@@ -642,7 +642,7 @@ namespace Fnaf99
 
         }
         public static Settings settings;
-
+        [STAThread]
         static void Main(string[] args)
         {
             if (File.Exists("settings.json"))
