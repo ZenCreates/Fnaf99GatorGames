@@ -1,4 +1,0 @@
-Diffuse=ENV_TEX_Stage_Rim_BaseColor
-Normal=ENV_TEX_Stage_Rim_Normal
-Other[0]=ENV_TEX_Stage_Rim_OcclusionRoughnessMetallic
-Other[1]=TEC_GradientFromCenter

@@ -1,8 +1,0 @@
-Diffuse=T_M_Plane_Ceramic_floor_MAT_BaseColor
-Normal=T_M_Plane_Ceramic_floor_MAT_Normal
-Other[0]=T_M_Plane_Ceramic_floor_MAT_Metallic
-Other[1]=T_M_Plane_Ceramic_floor_MAT_Roughness
-Other[2]=T_M_Plane_ENV_MAT_Wide_Floor_Planks1_Metallic
-Other[3]=T_M_Plane_ENV_MAT_Wide_Floor_Planks1_Normal
-Other[4]=T_M_Plane_ENV_MAT_Wide_Floor_Planks1_Roughness
-Other[5]=white

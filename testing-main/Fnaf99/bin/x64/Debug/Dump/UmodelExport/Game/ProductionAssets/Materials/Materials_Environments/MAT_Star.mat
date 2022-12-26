@@ -1,4 +1,0 @@
-Diffuse=ENV_TEX_Star_BaseColor
-Normal=ENV_TEX_Star_Normal
-Other[0]=ENV_TEX_Star_OcclusionRoughnessMetallic
-Other[1]=TEC_GradientFromCenter

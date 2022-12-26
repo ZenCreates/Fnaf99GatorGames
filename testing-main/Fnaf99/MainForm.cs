@@ -524,10 +524,14 @@ namespace Fnaf99
             Console.WriteLine("penis");
         }
 
-        private void aboutBtn_Click(object sender, EventArgs e)
+        private void umodelInsts_Click(object sender, EventArgs e)
         {
-            var newForm = new AboutForm();
-            newForm.Show();
+
+        }
+
+        private void actortodumplabel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

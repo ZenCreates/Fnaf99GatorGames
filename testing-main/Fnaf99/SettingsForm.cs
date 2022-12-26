@@ -38,7 +38,61 @@ namespace Fnaf99
             var newSettings = JsonConvert.SerializeObject(Program.settings);
             File.WriteAllText("settings.json", newSettings);
             Application.Restart();
+        }
 
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pakPath_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void unrealVersion_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SettingsForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void exeName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void aboutBtn_Click(object sender, EventArgs e)
+        {  
+            var newForm = new AboutForm();
+            newForm.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            aes.Text = Program.settings.AESKey;
+            exeName.Text = Program.settings.gameName;
+            pakPath.Text = Program.settings.pakFolder;
+            unrealVersion.Text = Program.settings.ue4version;
+            this.Close();
         }
     }
 }

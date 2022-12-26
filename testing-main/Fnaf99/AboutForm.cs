@@ -28,5 +28,10 @@ namespace Fnaf99
             Process.Start("https://www.youtube.com/channel/UCZIXxTGxnemIujXCXOKjs7g");
         
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

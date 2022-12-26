@@ -38,14 +38,16 @@ namespace Fnaf99
             this.pakPath = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.settingBtn = new System.Windows.Forms.Button();
+            this.aboutBtn = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // aes
             // 
-            this.aes.BackColor = System.Drawing.Color.Black;
+            this.aes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
             this.aes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.aes.Font = new System.Drawing.Font("Courier New", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.aes.ForeColor = System.Drawing.Color.DarkRed;
+            this.aes.ForeColor = System.Drawing.Color.White;
             this.aes.Location = new System.Drawing.Point(138, 12);
             this.aes.Name = "aes";
             this.aes.Size = new System.Drawing.Size(975, 29);
@@ -56,102 +58,144 @@ namespace Fnaf99
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
             this.label1.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.ForeColor = System.Drawing.Color.DarkRed;
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(12, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(101, 23);
             this.label1.TabIndex = 1;
             this.label1.Text = "AES Key";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // exeName
             // 
-            this.exeName.BackColor = System.Drawing.Color.Black;
+            this.exeName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
             this.exeName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.exeName.Font = new System.Drawing.Font("Courier New", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.exeName.ForeColor = System.Drawing.Color.DarkRed;
+            this.exeName.ForeColor = System.Drawing.Color.White;
             this.exeName.Location = new System.Drawing.Point(138, 47);
             this.exeName.Name = "exeName";
             this.exeName.Size = new System.Drawing.Size(975, 29);
             this.exeName.TabIndex = 2;
             this.exeName.Text = "AESKey";
+            this.exeName.TextChanged += new System.EventHandler(this.exeName_TextChanged);
             // 
             // unrealVersion
             // 
-            this.unrealVersion.BackColor = System.Drawing.Color.Black;
+            this.unrealVersion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
             this.unrealVersion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.unrealVersion.Font = new System.Drawing.Font("Courier New", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.unrealVersion.ForeColor = System.Drawing.Color.DarkRed;
+            this.unrealVersion.ForeColor = System.Drawing.Color.White;
             this.unrealVersion.Location = new System.Drawing.Point(171, 82);
             this.unrealVersion.Name = "unrealVersion";
             this.unrealVersion.Size = new System.Drawing.Size(942, 29);
             this.unrealVersion.TabIndex = 3;
             this.unrealVersion.Text = "AESKey";
+            this.unrealVersion.TextChanged += new System.EventHandler(this.unrealVersion_TextChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
             this.label2.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.ForeColor = System.Drawing.Color.DarkRed;
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(12, 47);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(114, 23);
             this.label2.TabIndex = 4;
             this.label2.Text = "Exe Name";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
             this.label3.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.ForeColor = System.Drawing.Color.DarkRed;
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(12, 82);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(153, 23);
             this.label3.TabIndex = 5;
             this.label3.Text = "UE4 Version";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // pakPath
             // 
-            this.pakPath.BackColor = System.Drawing.Color.Black;
+            this.pakPath.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
             this.pakPath.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pakPath.Font = new System.Drawing.Font("Courier New", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.pakPath.ForeColor = System.Drawing.Color.DarkRed;
+            this.pakPath.ForeColor = System.Drawing.Color.White;
             this.pakPath.Location = new System.Drawing.Point(171, 117);
             this.pakPath.Name = "pakPath";
             this.pakPath.Size = new System.Drawing.Size(942, 29);
             this.pakPath.TabIndex = 6;
             this.pakPath.Text = "AESKey";
+            this.pakPath.TextChanged += new System.EventHandler(this.pakPath_TextChanged);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
             this.label4.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.ForeColor = System.Drawing.Color.DarkRed;
+            this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(12, 117);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(153, 23);
             this.label4.TabIndex = 7;
             this.label4.Text = "Path to pak";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // settingBtn
             // 
+            this.settingBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
             this.settingBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.settingBtn.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.settingBtn.ForeColor = System.Drawing.Color.DarkRed;
+            this.settingBtn.ForeColor = System.Drawing.Color.White;
             this.settingBtn.Location = new System.Drawing.Point(938, 404);
             this.settingBtn.Name = "settingBtn";
             this.settingBtn.Size = new System.Drawing.Size(175, 34);
             this.settingBtn.TabIndex = 11;
             this.settingBtn.Text = "Apply";
-            this.settingBtn.UseVisualStyleBackColor = true;
+            this.settingBtn.UseVisualStyleBackColor = false;
             this.settingBtn.Click += new System.EventHandler(this.settingBtn_Click);
+            // 
+            // aboutBtn
+            // 
+            this.aboutBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.aboutBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.aboutBtn.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.aboutBtn.ForeColor = System.Drawing.Color.White;
+            this.aboutBtn.Location = new System.Drawing.Point(12, 406);
+            this.aboutBtn.Name = "aboutBtn";
+            this.aboutBtn.Size = new System.Drawing.Size(78, 32);
+            this.aboutBtn.TabIndex = 13;
+            this.aboutBtn.Text = "About";
+            this.aboutBtn.UseVisualStyleBackColor = false;
+            this.aboutBtn.Click += new System.EventHandler(this.aboutBtn_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(757, 404);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(175, 34);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "Cancel";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // SettingsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
             this.ClientSize = new System.Drawing.Size(1125, 450);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.aboutBtn);
             this.Controls.Add(this.settingBtn);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pakPath);
@@ -161,9 +205,11 @@ namespace Fnaf99
             this.Controls.Add(this.exeName);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.aes);
+            this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "SettingsForm";
-            this.Text = "SettingsForm";
+            this.Text = "Settings";
+            this.Load += new System.EventHandler(this.SettingsForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -180,5 +226,7 @@ namespace Fnaf99
         private System.Windows.Forms.TextBox pakPath;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button settingBtn;
+        private System.Windows.Forms.Button aboutBtn;
+        private System.Windows.Forms.Button button1;
     }
 }
