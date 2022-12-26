@@ -359,22 +359,20 @@ namespace Fnaf99
                                var rot = Actor.K2_GetActorRotation();
                                var scl = Actor.GetActorScale3D();
 
-                               var newObject = new UEObjectInfo();
+                               var newObject2 = new UEObjectInfo();
 
                                //KismetSystemLibrary
-                               newObject.path = Actor.GetShortName();
-                               newObject.type = "dummy";
-                               newObject.position = pos;
-                               newObject.rotation = rot;
-                               newObject.scale = scl;
-                               objects.Add(newObject);
-                               /*
+                               //newObject2.path = Actor.GetShortName();
+                               //newObject2.type = "dummy";
+                               //newObject2.position = pos;
+                               //newObject2.rotation = rot;
+                               //newObject2.scale = scl;
+                               //objects.Add(newObject2);
+                               var realActor = Actor.As<Actor>();
 
-                                var realActor = Actor.As<Actor>();
-
-                                var root = realActor["RootComponent"];
-                                Log($"Doing recursive dumping for object {realActor.GetShortName()} {a}");
-                                if(alreadyDumpedBlueprints.Keys.Contains(realActor.ClassName))
+                               var root = realActor["RootComponent"];
+                               Log($"Doing recursive dumping for object {realActor.GetShortName()} {a}");
+                               if(alreadyDumpedBlueprints.Keys.Contains(realActor.ClassName))
                                 {
                                     var newObject = alreadyDumpedBlueprints[realActor.ClassName];
                                     newObject.position = realActor.K2_GetActorLocation();
@@ -401,12 +399,12 @@ namespace Fnaf99
                                     var namme = sm.StaticMesh.GetFullPath().Split(' ');
                                     newObject.path = namme[1];
                                     newObject.type = "mesh";
-                                    var pos = realActor.K2_GetActorLocation();
-                                    var rot = realActor.K2_GetActorRotation();
-                                    var scl = realActor.GetActorScale3D();
-                                    newObject.position = pos;
-                                    newObject.rotation = rot;
-                                    newObject.scale = scl;
+                                    var pos2 = realActor.K2_GetActorLocation();
+                                    var rot2 = realActor.K2_GetActorRotation();
+                                    var scl2 = realActor.GetActorScale3D();
+                                    newObject.position = pos2;
+                                    newObject.rotation = rot2;
+                                    newObject.scale = scl2;
 
 
                                     if (alreadyDumped.Keys.Contains(namme[1])) continue;
