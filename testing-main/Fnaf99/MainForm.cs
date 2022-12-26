@@ -362,49 +362,49 @@ namespace Fnaf99
                                var newObject2 = new UEObjectInfo();
 
                                //KismetSystemLibrary
-                               //newObject2.path = Actor.GetShortName();
-                               //newObject2.type = "dummy";
-                               //newObject2.position = pos;
-                               //newObject2.rotation = rot;
-                               //newObject2.scale = scl;
-                               //objects.Add(newObject2);
+                               newObject2.path = Actor.GetShortName();
+                               newObject2.type = "dummy";
+                               newObject2.position = pos;
+                               newObject2.rotation = rot;
+                               newObject2.scale = scl;
+                               objects.Add(newObject2);
                                var realActor = Actor.As<Actor>();
 
                                var root = realActor["RootComponent"];
                                Log($"Doing recursive dumping for object {realActor.GetShortName()} {a}");
                                if(alreadyDumpedBlueprints.Keys.Contains(realActor.ClassName))
                                 {
-                                    var newObject = alreadyDumpedBlueprints[realActor.ClassName];
-                                    newObject.position = realActor.K2_GetActorLocation();
-                                    newObject.rotation = realActor.K2_GetActorRotation();
-                                    newObject.scale = realActor.GetActorScale3D();
-                                    objects.Add(newObject);
+                                    var newObject5 = alreadyDumpedBlueprints[realActor.ClassName];
+                                    newObject5.position = realActor.K2_GetActorLocation();
+                                    newObject5.rotation = realActor.K2_GetActorRotation();
+                                    newObject5.scale = realActor.GetActorScale3D();
+                                    objects.Add(newObject5);
                                     return;
                                 }
-                                //Console.WriteLine($"SKIPPING {realActor.GetShortName()}. Root component - {root.GetShortName()}");
+                                Console.WriteLine($"SKIPPING {realActor.GetShortName()}. Root component - {root.GetShortName()}");
                                 if (root.IsA(out SceneComponent sceneComponent))
                                 {
-                                    var newObject = new UEObjectInfo();
-                                    newObject.type = "dummy";
-                                    newObject.path = sceneComponent.GetShortName();
-                                    newObject.position = realActor.K2_GetActorLocation();
-                                    newObject.rotation = realActor.K2_GetActorRotation();
-                                    newObject.scale = realActor.GetActorScale3D();
-                                    objects.Add(newObject);
-                                    DumpComponentsRecursively(ref objects, sceneComponent.AttachChildren, sceneComponent, newObject);
+                                    var newObject3 = new UEObjectInfo();
+                                    newObject3.type = "dummy";
+                                    newObject3.path = sceneComponent.GetShortName();
+                                    newObject3.position = realActor.K2_GetActorLocation();
+                                    newObject3.rotation = realActor.K2_GetActorRotation();
+                                    newObject3.scale = realActor.GetActorScale3D();
+                                    objects.Add(newObject3);
+                                    DumpComponentsRecursively(ref objects, sceneComponent.AttachChildren, sceneComponent, newObject3);
                                 }
                                 else if (root.IsA(out StaticMeshComponent sm))
                                 {
-                                    var newObject = new UEObjectInfo();
+                                    var newObject4 = new UEObjectInfo();
                                     var namme = sm.StaticMesh.GetFullPath().Split(' ');
-                                    newObject.path = namme[1];
-                                    newObject.type = "mesh";
+                                    newObject4.path = namme[1];
+                                    newObject4.type = "mesh";
                                     var pos2 = realActor.K2_GetActorLocation();
                                     var rot2 = realActor.K2_GetActorRotation();
                                     var scl2 = realActor.GetActorScale3D();
-                                    newObject.position = pos2;
-                                    newObject.rotation = rot2;
-                                    newObject.scale = scl2;
+                                    newObject4.position = pos2;
+                                    newObject4.rotation = rot2;
+                                    newObject4.scale = scl2;
 
 
                                     if (alreadyDumped.Keys.Contains(namme[1])) continue;
@@ -412,19 +412,19 @@ namespace Fnaf99
                                     UmodelDump(namme[1]);
                                 }
 
-                                /*   var pos = Actor.K2_GetActorLocation();
-                               var rot = Actor.K2_GetActorRotation();
-                               var scl = Actor.GetActorScale3D();
+                               var pos3 = Actor.K2_GetActorLocation();
+                               var rot3 = Actor.K2_GetActorRotation();
+                               var scl3 = Actor.GetActorScale3D();
 
                                var newObject = new UEObjectInfo();
 
                                //KismetSystemLibrary
                                newObject.path = Actor.GetShortName();
                                newObject.type = "empty";
-                               newObject.position = pos;
-                               newObject.rotation = rot;
-                               newObject.scale = scl;
-                               objects.Add(newObject);*/
+                               newObject.position = pos3;
+                               newObject.rotation = rot3;
+                               newObject.scale = scl3;
+                               objects.Add(newObject);
 
                             }
                         }
