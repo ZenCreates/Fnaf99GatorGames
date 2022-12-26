@@ -234,7 +234,7 @@ namespace Fnaf99
             //addr = UnrealEngine.Memory.ReadProcessMemory<ulong>(addr + 0x118);
             var kismetSysLib = new KismetSystemLibrary(kismetSystemLibAddr);
             Directory.CreateDirectory("Dump");
-            //world = new World(UnrealEngine.Memory.ReadProcessMemory<UInt64>(UnrealEngine.GWorldPtr));
+            var world = new World(UnrealEngine.Memory.ReadProcessMemory<UInt64>(UnrealEngine.GWorldPtr));
             var worldObj = world.Levels;
             for (uint i = 0; i < worldObj.Num; i++)
             {
@@ -246,7 +246,7 @@ namespace Fnaf99
                     for (var a = 0u; a < Actors.Num; a++)
                     {
                         var Actor = Actors[a].As<Actor>();
-                        if (Actor.Address == 0) continue;
+                        //if (Actor.Address == 0) continue;
                         if (Actor.IsA("Class /Script/Engine.Actor"))
                         {
                             if (Actor.IsA<StaticMeshActor>())
