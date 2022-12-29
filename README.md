@@ -8,4 +8,4 @@ PS: if you download this make sure to set your file directory in settings
 
 ### M4X4
 
-zwei you can do the funny email stuff i dont care lmao
+zwei you can do the funny email stuff i dont care lmao.
