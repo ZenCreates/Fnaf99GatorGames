@@ -36,8 +36,8 @@ namespace Fnaf99
                 ue.UpdateAddresses();
                 ue.EnableConsole();
             }
-                
-           
+
+
             else return false;
             return true;
         }
@@ -59,9 +59,9 @@ namespace Fnaf99
                 Levels.Items.Add(level.ClassName.Split('.')[1]);
             }
         }
-        public void Tick(object sender,EventArgs x)
+        public void Tick(object sender, EventArgs x)
         {
-            if(CheckProc())ParseWorldObject();
+            if (CheckProc()) ParseWorldObject();
         }
         void UmodelTick(object sender, EventArgs x)
         {
@@ -114,7 +114,7 @@ namespace Fnaf99
                     ulong entityAddr = UnrealEngine.Memory.ReadProcessMemory<ulong>(entityList + (ulong)(8U * (i >> 16)) + (ulong)(24U * (i % 65536U)));
                     if (entityAddr != 0UL)
                     {
-                        if(new UEObject(entityAddr).GetName()== "Default__KismetSystemLibrary")
+                        if (new UEObject(entityAddr).GetName() == "Default__KismetSystemLibrary")
                         {
                             kismetSystemLibAddr = entityAddr;
                             break;
@@ -140,31 +140,33 @@ namespace Fnaf99
         void UmodelDump(string name)
         {
             new Thread(() =>
-                 {
-                     var args = "";
-                     args += $"\"{Program.settings.pakFolder}\"";
-                     args += " ";
-                     args += $"-aes={Program.settings.AESKey}";
-                     args += " ";
-                     args += $"-game={Program.settings.ue4version}";
-                     args += " ";
-                     args += $"-pkg={name.Split('.')[0]}";
-                     args += " ";
-                     try
-                     {
-                         args += $"-export {name.Split('.')[1]}";
-                     }
-                     catch { args += $"-export {name}"; }
+            {
+                var args = "";
+                args += $"\"{Program.settings.pakFolder}\"";
+                args += " ";
+                args += $"-aes={Program.settings.AESKey}";
+                args += " ";
+                args += $"-game={Program.settings.ue4version}";
+                args += " ";
+                args += $"-pkg={name.Split('.')[0]}";
+                args += " ";
+                args += $"-png";
+                args += " ";
+                try
+                {
+                    args += $"-export {name.Split('.')[1]}";
+                }
+                catch { args += $"-export {name}"; }
+                
+                Process p = new Process();
+                p.StartInfo = new ProcessStartInfo($"{Path.GetDirectoryName(Process.GetCurrentProcess().MainModule.FileName)}\\umodel\\umodel.exe");
+                p.StartInfo.Arguments = args;
+                p.StartInfo.WorkingDirectory = Directory.GetCurrentDirectory() + "\\Dump";
+                p.StartInfo.CreateNoWindow = true;
+                p.StartInfo.UseShellExecute = false;
+                p.Start();
 
-                     Process p = new Process();
-                     p.StartInfo = new ProcessStartInfo($"{Path.GetDirectoryName(Process.GetCurrentProcess().MainModule.FileName)}\\umodel\\umodel.exe");
-                     p.StartInfo.Arguments = args;
-                     p.StartInfo.WorkingDirectory = Directory.GetCurrentDirectory() + "\\Dump";
-                     p.StartInfo.CreateNoWindow = true;
-                     p.StartInfo.UseShellExecute = false;
-                     p.Start();
-
-                 }).Start();
+            }).Start();
         }
         public void DumpComponentsRecursively(ref List<UEObjectInfo> objs, Array<SceneComponent> children, SceneComponent parent, UEObjectInfo parentObject)
         {
@@ -234,7 +236,7 @@ namespace Fnaf99
             //addr = UnrealEngine.Memory.ReadProcessMemory<ulong>(addr + 0x118);
             var kismetSysLib = new KismetSystemLibrary(kismetSystemLibAddr);
             Directory.CreateDirectory("Dump");
-            var world = new World(UnrealEngine.Memory.ReadProcessMemory<UInt64>(UnrealEngine.GWorldPtr));
+            //world = new World(UnrealEngine.Memory.ReadProcessMemory<UInt64>(UnrealEngine.GWorldPtr));
             var worldObj = world.Levels;
             for (uint i = 0; i < worldObj.Num; i++)
             {
@@ -246,7 +248,7 @@ namespace Fnaf99
                     for (var a = 0u; a < Actors.Num; a++)
                     {
                         var Actor = Actors[a].As<Actor>();
-                        //if (Actor.Address == 0) continue;
+                        if (Actor.Address == 0) continue;
                         if (Actor.IsA("Class /Script/Engine.Actor"))
                         {
                             if (Actor.IsA<StaticMeshActor>())
@@ -355,76 +357,70 @@ namespace Fnaf99
                             }
                             else
                             {
-                               var pos = Actor.K2_GetActorLocation();
-                               var rot = Actor.K2_GetActorRotation();
-                               var scl = Actor.GetActorScale3D();
+                                var pos = Actor.K2_GetActorLocation();
+                                var rot = Actor.K2_GetActorRotation();
+                                var scl = Actor.GetActorScale3D();
 
-                               var newObject2 = new UEObjectInfo();
+                                var newObject = new UEObjectInfo();
 
-                               //KismetSystemLibrary
-                               newObject2.path = Actor.GetShortName();
-                               newObject2.type = "dummy";
-                               newObject2.position = pos;
-                               newObject2.rotation = rot;
-                               newObject2.scale = scl;
-                               objects.Add(newObject2);
-                               var realActor = Actor.As<Actor>();
-
-                               var root = realActor["RootComponent"];
-                               Log($"Doing recursive dumping for object {realActor.GetShortName()} {a}");
-                               if(alreadyDumpedBlueprints.Keys.Contains(realActor.ClassName))
-                                {
-                                    var newObject5 = alreadyDumpedBlueprints[realActor.ClassName];
-                                    newObject5.position = realActor.K2_GetActorLocation();
-                                    newObject5.rotation = realActor.K2_GetActorRotation();
-                                    newObject5.scale = realActor.GetActorScale3D();
-                                    objects.Add(newObject5);
-                                    return;
-                                }
-                                Console.WriteLine($"SKIPPING {realActor.GetShortName()}. Root component - {root.GetShortName()}");
-                                if (root.IsA(out SceneComponent sceneComponent))
-                                {
-                                    var newObject3 = new UEObjectInfo();
-                                    newObject3.type = "dummy";
-                                    newObject3.path = sceneComponent.GetShortName();
-                                    newObject3.position = realActor.K2_GetActorLocation();
-                                    newObject3.rotation = realActor.K2_GetActorRotation();
-                                    newObject3.scale = realActor.GetActorScale3D();
-                                    objects.Add(newObject3);
-                                    DumpComponentsRecursively(ref objects, sceneComponent.AttachChildren, sceneComponent, newObject3);
-                                }
-                                else if (root.IsA(out StaticMeshComponent sm))
-                                {
-                                    var newObject4 = new UEObjectInfo();
-                                    var namme = sm.StaticMesh.GetFullPath().Split(' ');
-                                    newObject4.path = namme[1];
-                                    newObject4.type = "mesh";
-                                    var pos2 = realActor.K2_GetActorLocation();
-                                    var rot2 = realActor.K2_GetActorRotation();
-                                    var scl2 = realActor.GetActorScale3D();
-                                    newObject4.position = pos2;
-                                    newObject4.rotation = rot2;
-                                    newObject4.scale = scl2;
-
-
-                                    if (alreadyDumped.Keys.Contains(namme[1])) continue;
-
-                                    UmodelDump(namme[1]);
-                                }
-
-                               var pos3 = Actor.K2_GetActorLocation();
-                               var rot3 = Actor.K2_GetActorRotation();
-                               var scl3 = Actor.GetActorScale3D();
-
-                               var newObject = new UEObjectInfo();
-
-                               //KismetSystemLibrary
-                               newObject.path = Actor.GetShortName();
-                               newObject.type = "empty";
-                               newObject.position = pos3;
-                               newObject.rotation = rot3;
-                               newObject.scale = scl3;
-                               objects.Add(newObject);
+                                //KismetSystemLibrary
+                                newObject.path = Actor.GetShortName();
+                                newObject.type = "dummy";
+                                newObject.position = pos;
+                                newObject.rotation = rot;
+                                newObject.scale = scl;
+                                objects.Add(newObject);
+                                /*
+                                 var realActor = Actor.As<Actor>();
+                                 var root = realActor["RootComponent"];
+                                 Log($"Doing recursive dumping for object {realActor.GetShortName()} {a}");
+                                 if(alreadyDumpedBlueprints.Keys.Contains(realActor.ClassName))
+                                 {
+                                     var newObject = alreadyDumpedBlueprints[realActor.ClassName];
+                                     newObject.position = realActor.K2_GetActorLocation();
+                                     newObject.rotation = realActor.K2_GetActorRotation();
+                                     newObject.scale = realActor.GetActorScale3D();
+                                     objects.Add(newObject);
+                                     return;
+                                 }
+                                 //Console.WriteLine($"SKIPPING {realActor.GetShortName()}. Root component - {root.GetShortName()}");
+                                 if (root.IsA(out SceneComponent sceneComponent))
+                                 {
+                                     var newObject = new UEObjectInfo();
+                                     newObject.type = "dummy";
+                                     newObject.path = sceneComponent.GetShortName();
+                                     newObject.position = realActor.K2_GetActorLocation();
+                                     newObject.rotation = realActor.K2_GetActorRotation();
+                                     newObject.scale = realActor.GetActorScale3D();
+                                     objects.Add(newObject);
+                                     DumpComponentsRecursively(ref objects, sceneComponent.AttachChildren, sceneComponent, newObject);
+                                 }
+                                 else if (root.IsA(out StaticMeshComponent sm))
+                                 {
+                                     var newObject = new UEObjectInfo();
+                                     var namme = sm.StaticMesh.GetFullPath().Split(' ');
+                                     newObject.path = namme[1];
+                                     newObject.type = "mesh";
+                                     var pos = realActor.K2_GetActorLocation();
+                                     var rot = realActor.K2_GetActorRotation();
+                                     var scl = realActor.GetActorScale3D();
+                                     newObject.position = pos;
+                                     newObject.rotation = rot;
+                                     newObject.scale = scl;
+                                     if (alreadyDumped.Keys.Contains(namme[1])) continue;
+                                     UmodelDump(namme[1]);
+                                 }
+                                 /*   var pos = Actor.K2_GetActorLocation();
+                                var rot = Actor.K2_GetActorRotation();
+                                var scl = Actor.GetActorScale3D();
+                                var newObject = new UEObjectInfo();
+                                //KismetSystemLibrary
+                                newObject.path = Actor.GetShortName();
+                                newObject.type = "empty";
+                                newObject.position = pos;
+                                newObject.rotation = rot;
+                                newObject.scale = scl;
+                                objects.Add(newObject);*/
 
                             }
                         }
@@ -432,7 +428,7 @@ namespace Fnaf99
                     }
 
                 }
-                
+
             }
             if (true)
             {
@@ -468,14 +464,14 @@ namespace Fnaf99
         int tempActorsToDump = 0;
         private void Levels_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+
             var item = Levels.SelectedItem.ToString();
 
-            if (!mapsToDumpList.Contains(item))               
+            if (!mapsToDumpList.Contains(item))
             {
                 mapsToDumpList.Add(item);
                 mapsToDump.Items.Add(item);
-               
+
                 for (int i = 0; i < world.Levels.Num; i++)
                 {
                     if (mapsToDumpList.Contains(world.Levels[(uint)i].ClassName.Split('.')[1]))
@@ -522,14 +518,10 @@ namespace Fnaf99
             Console.WriteLine("penis");
         }
 
-        private void umodelInsts_Click(object sender, EventArgs e)
+        private void aboutBtn_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void actortodumplabel_Click(object sender, EventArgs e)
-        {
-
+            var newForm = new AboutForm();
+            newForm.Show();
         }
     }
 }
