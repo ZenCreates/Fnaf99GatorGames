@@ -164,7 +164,7 @@ namespace Fnaf99
             this.actortodumplabel.TabIndex = 9;
             this.actortodumplabel.Text = "Meshes to dump: 0";
             this.actortodumplabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.actortodumplabel.Click += new System.EventHandler(this.actortodumplabel_Click);
+           
             // 
             // settingBtn
             // 
@@ -193,7 +193,6 @@ namespace Fnaf99
             this.umodelInsts.TabIndex = 11;
             this.umodelInsts.Text = "UModel Instances: 0";
             this.umodelInsts.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.umodelInsts.Click += new System.EventHandler(this.umodelInsts_Click);
             // 
             // pictureBox1
             // 
