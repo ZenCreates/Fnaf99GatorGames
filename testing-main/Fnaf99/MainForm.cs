@@ -29,7 +29,7 @@ namespace Fnaf99
         {
             InitializeComponent();
 
-            Program.settings.appversion = "v1.1";
+            Program.settings.appversion = "v1.2";
             // Replace with the name of the repository
             string repoName = "zencreates/fnaf99gatorgames";
 

@@ -112,8 +112,7 @@ namespace Fnaf99
             // If the user clicked the OK button, retrieve the selected folder path
             if (result == DialogResult.OK)
             {
-                Program.settings.pakFolder = folderBrowserDialog1.FileName;
-                pakPath.Text = Program.settings.pakFolder;
+                pakPath.Text = folderBrowserDialog1.FileName;
                 // Do something with the selected folder here...
             }
         }
@@ -144,15 +143,15 @@ namespace Fnaf99
         private void sb_Click(object sender, EventArgs e)
         {
             aes.Text = "0x85F7D4007015493ED0359C9007266038F8F7B1F96988F19A610103874CC95286";
-            unrealVersion.Text = "4.25";
-            exeName.Text = "fnaf9.exe";
+            unrealVersion.Text = "ue4.24";
+            exeName.Text = "fnaf9-Win64-Shipping";
         }
 
         private void hw_Click(object sender, EventArgs e)
         {
             aes.Text = "0x710891DF17EAFFCA17CB0620F0F0DCA90A00C657F49BC131D4110B265EC2E41E";
-            unrealVersion.Text = "4.23";
-            exeName.Text = "freddys.exe";
+            unrealVersion.Text = "ue4.23";
+            exeName.Text = "freddys-Win64-Shipping";
         }
         bool enabled = false;
         private void mv_Click(object sender, EventArgs e)
