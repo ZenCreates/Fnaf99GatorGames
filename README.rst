@@ -8,8 +8,6 @@ Fantastic Map Dumper for Unreal Engine games
 :Blender Importer:  https://github.com/M4X40/UModeltoBlender
 :Download Page:     https://github.com/ZenCreates/Fnaf99GatorGames/releases/latest
 :Authors:           Zen, zwei, M4X4
-:License:           GPL https://opensource.org/licenses/gpl-license
-
 
 CREDITS
 ^^^^^^^
