@@ -217,7 +217,6 @@ namespace Fnaf99
             this.ExportingTitle.TabIndex = 0;
             this.ExportingTitle.Text = "Map Exporting";
             this.ExportingTitle.Visible = false;
-            this.ExportingTitle.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // ExportingObject
             // 
@@ -231,7 +230,6 @@ namespace Fnaf99
             this.ExportingObject.Text = "Current Object";
             this.ExportingObject.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.ExportingObject.Visible = false;
-            this.ExportingObject.Click += new System.EventHandler(this.label4_Click);
             // 
             // MainForm
             // 

@@ -24,9 +24,11 @@ namespace Fnaf99
         Process process;
         Timer mainTimer = new Timer() { Interval = 1000, Enabled = true };
         Timer umodelTimer = new Timer() { Interval = 10, Enabled = true };
+    
         public MainForm()
         {
             InitializeComponent();
+
             Program.settings.appversion = "v1.1";
             // Replace with the name of the repository
             string repoName = "zencreates/fnaf99gatorgames";
@@ -141,14 +143,9 @@ namespace Fnaf99
                 }
             }
         }
-        public void LogText(string msg)
-        {
-            ExportingObject.Text = msg;
-        }
-        public void Log(string msg)
+        static void Log(string msg)
         {
             Console.WriteLine(msg);
-            LogText(msg);
             //log.WriteLine(msg);
         }
         static void Log(object obj)
@@ -163,9 +160,6 @@ namespace Fnaf99
         {
             new Thread(() =>
             {
-                ExportingObject.Visible = true;
-                ExportingTitle.Visible = true;
-                ExportingTitle.Text = $"Pak {name}";
                 var args = "";
                 args += $"\"{Program.settings.pakFolder}\"";
                 args += " ";
@@ -182,7 +176,7 @@ namespace Fnaf99
                     args += $"-export {name.Split('.')[1]}";
                 }
                 catch { args += $"-export {name}"; }
-                
+
                 Process p = new Process();
                 p.StartInfo = new ProcessStartInfo($"{Path.GetDirectoryName(Process.GetCurrentProcess().MainModule.FileName)}\\umodel\\umodel.exe");
                 p.StartInfo.Arguments = args;
@@ -479,8 +473,6 @@ namespace Fnaf99
             var stringLevel = JsonConvert.SerializeObject(objects, Formatting.Indented);
             File.WriteAllText("Dump\\dump.json", stringLevel);
             Log("Done. Actors dumped: " + staticMeshActorCount);
-            ExportingObject.Visible = false;
-            ExportingTitle.Visible = false;
 
         }
         private void dumpButton_Click(object sender, EventArgs e)
@@ -549,21 +541,6 @@ namespace Fnaf99
         {
             var newForm = new AboutForm();
             newForm.Show();
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Consle_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
