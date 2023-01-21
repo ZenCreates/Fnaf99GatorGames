@@ -40,6 +40,8 @@ namespace Fnaf99
         public string gameName;
         public string pakFolder;
         public string ue4version;
+        public string appversion;
+        public string newestappversion;
     }
     
     public static class Program

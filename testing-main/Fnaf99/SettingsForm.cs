@@ -140,5 +140,45 @@ namespace Fnaf99
 
         }
 
+ 
+        private void sb_Click(object sender, EventArgs e)
+        {
+            Program.settings.AESKey = "0x85F7D4007015493ED0359C9007266038F8F7B1F96988F19A610103874CC95286";
+            aes.Text = Program.settings.AESKey;
+            Program.settings.ue4version = "4.25";
+            unrealVersion.Text = Program.settings.ue4version;
+            Program.settings.gameName = "fnaf9.exe";
+            exeName.Text = Program.settings.gameName;
+        }
+
+        private void hw_Click(object sender, EventArgs e)
+        {
+            Program.settings.AESKey = "0x710891DF17EAFFCA17CB0620F0F0DCA90A00C657F49BC131D4110B265EC2E41E";
+            aes.Text = Program.settings.AESKey;
+            Program.settings.ue4version = "4.23";
+            unrealVersion.Text = Program.settings.ue4version;
+            Program.settings.gameName = "freddys.exe";
+            exeName.Text = Program.settings.gameName;
+        }
+        bool enabled = false;
+        private void mv_Click(object sender, EventArgs e)
+        {
+            if (enabled == false)
+            {
+                enabled = true;
+                label2.Visible = true;
+                label3.Visible = true;
+                exeName.Visible = true;
+                unrealVersion.Visible = true;
+            }
+            else if (enabled == true)
+            {
+                enabled = false;
+                label2.Visible = false;
+                label3.Visible = false;
+                exeName.Visible = false;
+                unrealVersion.Visible = false;
+            }
+        }
     }
 }

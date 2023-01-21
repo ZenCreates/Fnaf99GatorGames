@@ -11,11 +11,12 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Net.Http;
 using System.Windows.Forms;
 using UnrealSharp;
 using Console = System.Console;
 using Timer = System.Windows.Forms.Timer;
-
+using Newtonsoft.Json;
 namespace Fnaf99
 {
     public partial class MainForm : Form
@@ -26,6 +27,22 @@ namespace Fnaf99
         public MainForm()
         {
             InitializeComponent();
+            Program.settings.appversion = "v1.1";
+            // Replace with the name of the repository
+            string repoName = "zencreates/fnaf99gatorgames";
+
+            // Use the GitHub API to get the latest release tag
+            using (var client = new HttpClient())
+            {
+                client.DefaultRequestHeaders.Add("User-Agent", "C# App");
+                var response = client.GetAsync($"https://api.github.com/repos/{repoName}/releases/latest").Result;
+                var json = response.Content.ReadAsStringAsync().Result;
+                dynamic data = JsonConvert.DeserializeObject(json);
+                string latestTag = data.tag_name;
+                //Console.WriteLine(response.ToString());
+                Console.WriteLine("Latest release tag: " + latestTag);
+                Program.settings.newestappversion = latestTag;
+            }
         }
         public bool ConnectToProcess()
         {
@@ -124,9 +141,14 @@ namespace Fnaf99
                 }
             }
         }
-        static void Log(string msg)
+        public void LogText(string msg)
+        {
+            ExportingObject.Text = msg;
+        }
+        public void Log(string msg)
         {
             Console.WriteLine(msg);
+            LogText(msg);
             //log.WriteLine(msg);
         }
         static void Log(object obj)
@@ -141,6 +163,9 @@ namespace Fnaf99
         {
             new Thread(() =>
             {
+                ExportingObject.Visible = true;
+                ExportingTitle.Visible = true;
+                ExportingTitle.Text = $"Pak {name}";
                 var args = "";
                 args += $"\"{Program.settings.pakFolder}\"";
                 args += " ";
@@ -454,6 +479,8 @@ namespace Fnaf99
             var stringLevel = JsonConvert.SerializeObject(objects, Formatting.Indented);
             File.WriteAllText("Dump\\dump.json", stringLevel);
             Log("Done. Actors dumped: " + staticMeshActorCount);
+            ExportingObject.Visible = false;
+            ExportingTitle.Visible = false;
 
         }
         private void dumpButton_Click(object sender, EventArgs e)
@@ -522,6 +549,21 @@ namespace Fnaf99
         {
             var newForm = new AboutForm();
             newForm.Show();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Consle_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

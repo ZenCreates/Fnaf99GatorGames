@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Fnaf99
@@ -16,6 +9,17 @@ namespace Fnaf99
         public AboutForm()
         {
             InitializeComponent();
+            if (Program.settings.appversion != Program.settings.newestappversion)
+            {
+                label1.Text = $"App Version: {Program.settings.appversion}, Newest Version: {Program.settings.newestappversion} \n made by 1987kostya \n Redesigned by Zen and M4X4 for GG";
+                Update.Visible = true;
+
+            }
+            else
+            {
+                label1.Text = $"Current Version: {Program.settings.newestappversion} \n made by 1987kostya \n Redesigned by Zen and M4X4 for GG";
+            }
+            
         }
 
         private void donateBtn_Click(object sender, EventArgs e)
@@ -32,6 +36,13 @@ namespace Fnaf99
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+
+        private void Update_Click(object sender, EventArgs e)
+        {
+            Process.Start($"https://github.com/ZenCreates/Fnaf99GatorGames/releases/download/{Program.settings.newestappversion}/Debug.zip");
+            Application.Exit();
         }
     }
 }
