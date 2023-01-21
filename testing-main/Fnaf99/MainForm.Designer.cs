@@ -42,8 +42,6 @@ namespace Fnaf99
             this.settingBtn = new System.Windows.Forms.Button();
             this.umodelInsts = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.ExportingTitle = new System.Windows.Forms.Label();
-            this.ExportingObject = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -206,40 +204,13 @@ namespace Fnaf99
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
             // 
-            // ExportingTitle
-            // 
-            this.ExportingTitle.AutoSize = true;
-            this.ExportingTitle.Font = new System.Drawing.Font("MS Gothic", 50.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ExportingTitle.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.ExportingTitle.Location = new System.Drawing.Point(291, 388);
-            this.ExportingTitle.Name = "ExportingTitle";
-            this.ExportingTitle.Size = new System.Drawing.Size(471, 67);
-            this.ExportingTitle.TabIndex = 0;
-            this.ExportingTitle.Text = "Map Exporting";
-            this.ExportingTitle.Visible = false;
-            // 
-            // ExportingObject
-            // 
-            this.ExportingObject.AutoSize = true;
-            this.ExportingObject.Font = new System.Drawing.Font("MS Gothic", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ExportingObject.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.ExportingObject.Location = new System.Drawing.Point(423, 465);
-            this.ExportingObject.Name = "ExportingObject";
-            this.ExportingObject.Size = new System.Drawing.Size(208, 27);
-            this.ExportingObject.TabIndex = 2;
-            this.ExportingObject.Text = "Current Object";
-            this.ExportingObject.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.ExportingObject.Visible = false;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(57)))), ((int)(((byte)(63)))));
             this.ClientSize = new System.Drawing.Size(952, 673);
-            this.Controls.Add(this.ExportingObject);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.ExportingTitle);
             this.Controls.Add(this.umodelInsts);
             this.Controls.Add(this.settingBtn);
             this.Controls.Add(this.actortodumplabel);
@@ -274,7 +245,5 @@ namespace Fnaf99
         private System.Windows.Forms.Button settingBtn;
         private System.Windows.Forms.Label umodelInsts;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label ExportingTitle;
-        private System.Windows.Forms.Label ExportingObject;
     }
 }

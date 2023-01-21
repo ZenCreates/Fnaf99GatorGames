@@ -246,6 +246,8 @@ namespace Fnaf99
 
         }
         ulong kismetSystemLibAddr;
+
+
         void Dump()
         {
             objects.Clear();
