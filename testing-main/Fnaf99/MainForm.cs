@@ -36,7 +36,7 @@ namespace Fnaf99
             // Use the GitHub API to get the latest release tag
             using (var client = new HttpClient())
             {
-                client.DefaultRequestHeaders.Add("User-Agent", "C# App");
+                client.DefaultRequestHeaders.Add("User-Agent", "fnaf99");
                 var response = client.GetAsync($"https://api.github.com/repos/{repoName}/releases/latest").Result;
                 var json = response.Content.ReadAsStringAsync().Result;
                 dynamic data = JsonConvert.DeserializeObject(json);
